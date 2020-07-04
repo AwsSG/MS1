@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap");
+
+/* -------------------------------------------------------------------- background image -----------*/
+body {
+  background-image: url("../images/bg-dark.png");
+}
+
+/* -------------------------------------------------------------------- Color palette --------------*/
+
+/* 
+#FCFFFD
+#DAFFEF
+#C0FDFB
+#64B6AC
+#5D737E 
+*/
+
+
+body {
+    margin-top: 60px;
+}
+
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #fafafa;
+}
+
+.round-img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-image: url("../images/aws.jpg");
+    background-size: cover;
+}
