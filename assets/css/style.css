@@ -7,29 +7,202 @@ body {
 
 /* -------------------------------------------------------------------- Color palette --------------*/
 
-/* 
-#FCFFFD
-#DAFFEF
-#C0FDFB
-#64B6AC
-#5D737E 
-*/
-
-
-body {
-    margin-top: 60px;
+.color1 {
+  color: #fcfffd;
 }
-
+.color2 {
+  color: #489fb5;
+}
+.color3 {
+  color: #ffa62b;
+}
+.color4 {
+  color: #64b6ac;
+}
+.color5 {
+  color: #5d737e;
+}
+.color6 {
+  color: #e71d36;
+}
 
 body {
   font-family: "Roboto", sans-serif;
-  color: #fafafa;
+  color: #fcfffd;
+}
+
+/* -------------------------------------------------------------------- info card ------------------*/
+.bg-info-card {
+  background-color: rgba(93, 115, 126, 0.1);
+  border-radius: 3%;
+  padding-top: 8px;
+  margin-top: 8px;
+}
+
+.round-img,
+.round-container {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  margin: 8px auto;
 }
 
 .round-img {
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
-    background-image: url("../images/aws.jpg");
-    background-size: cover;
+  background-image: url("../images/aws.jpg");
+  background-size: cover;
+  display: block;
 }
+
+/* -------------------------------------------------------------------- title & nav  ------------------*/
+.navigation .nav .nav-item a {
+  font-family: "Exo 2", sans-serif;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #fcfffd;
+  padding-left: 2px;
+  padding-right: 2px;
+  padding-bottom: 4px;
+  margin-left: 10px;
+}
+
+.active {
+  border-bottom: 1px solid #fcfffd;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.section-heading {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 200;
+}
+
+.title {
+  padding-top: 2rem;
+}
+.title-name,
+.title-keywords {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+#keyword1 {
+  animation: 2s ease 0s normal forwards 1 fadein;
+  -webkit-animation: 2s ease 0s normal forwards 1 fadein;
+}
+
+#sep1 {
+  animation: 3s ease 0s normal forwards 1 fadein;
+  -webkit-animation: 3s ease 0s normal forwards 1 fadein;
+}
+
+#keyword2 {
+  animation: 4s ease 0s normal forwards 1 fadein;
+  -webkit-animation: 4s ease 0s normal forwards 1 fadein;
+}
+
+#sep2 {
+  animation: 5s ease 0s normal forwards 1 fadein;
+  -webkit-animation: 5s ease 0s normal forwards 1 fadein;
+}
+
+#keyword3 {
+  animation: 6s ease 0s normal forwards 1 fadein;
+  -webkit-animation: 6s ease 0s normal forwards 1 fadein;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* -------------------------------------------------------------------- footer  ------------------*/
+
+.jumbotron {
+  background-color: rgba(93, 115, 126, 0.1);
+  margin-bottom: 0;
+  padding: 25px 30px 5px 30px;
+}
+
+.social-links li a i,
+.contact-link,
+.dl-icon {
+  transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  -webkit-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
+}
+
+.social-links li a i:hover,
+.contact-link:hover,
+.dl-icon:hover {
+  color: #e71d36;
+}
+
+.social-links li {
+  margin-left: 5px;
+}
+
+.footer-heading {
+  padding-bottom: 8px;
+  font-size: 1.25rem;
+  margin-bottom: 4px;
+  font-weight: 200;
+}
+.footer-txt,
+.download {
+  font-weight: 100;
+}
+
+.download {
+  padding-top: 12px;
+}
+
+.download a i {
+  margin-left: 6px;
+}
+
+/* -------------------------------------------------------------------- index body section  ------------------*/
+
+.personal-info-item {
+  display: block;
+  clear: both;
+}
+
+.personal-info-item .key,
+.personal-info-item .value {
+  padding-left: 8px;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.personal-info-item .key p,
+.personal-info-item .value p {
+  margin: 0;
+}
+
+.personal-info-item .key p {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 600;
+}
+
