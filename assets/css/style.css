@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap");
 
 /* -------------------------------------------------------------------- background image -----------*/
+
+/* source of the background img (https://www.toptal.com/designers/subtlepatterns/) */
 body {
   background-image: url("../images/bg-dark.png");
 }
@@ -31,18 +33,12 @@ body {
   color: #fcfffd;
 }
 
-/* -------------------------------------------------------------------- info card ------------------*/
-.bg-info-card {
-  background-color: rgba(93, 115, 126, 0.1);
-  border-radius: 3%;
-  padding-top: 8px;
-  margin-top: 8px;
-}
+/* -------------------------------------------------------------------- Header  ------------------*/
 
 .round-img,
 .round-container {
-  height: 200px;
-  width: 200px;
+  height: 150px;
+  width: 150px;
   border-radius: 50%;
   margin: 8px auto;
 }
@@ -53,7 +49,6 @@ body {
   display: block;
 }
 
-/* -------------------------------------------------------------------- title & nav  ------------------*/
 .navigation .nav .nav-item a {
   font-family: "Exo 2", sans-serif;
   margin-top: 10px;
@@ -81,11 +76,14 @@ body {
 .title {
   padding-top: 2rem;
 }
+
 .title-name,
 .title-keywords {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
 }
+
+/* Souce of the below animation code: (https://stackoverflow.com/questions/29846224/css-animation-with-delay-and-opacity) */
 
 #keyword1 {
   animation: 2s ease 0s normal forwards 1 fadein;
@@ -146,7 +144,8 @@ body {
 
 .social-links li a i,
 .contact-link,
-.dl-icon {
+.dl-icon,
+.card-link {
   transition: all 0.35s ease-in-out;
   -moz-transition: all 0.35s ease-in-out;
   -webkit-transition: all 0.35s ease-in-out;
@@ -155,7 +154,8 @@ body {
 
 .social-links li a i:hover,
 .contact-link:hover,
-.dl-icon:hover {
+.dl-icon:hover,
+.card-link:hover {
   color: #e71d36;
 }
 
@@ -184,6 +184,13 @@ body {
 
 /* -------------------------------------------------------------------- index body section  ------------------*/
 
+.bg-info-card {
+  background-color: rgba(93, 115, 126, 0.1);
+  border-radius: 3%;
+  padding-top: 8px;
+  margin-top: 8px;
+}
+
 .personal-info-item {
   display: block;
   clear: both;
@@ -206,3 +213,62 @@ body {
   font-weight: 600;
 }
 
+.bio {
+  line-height: 1.6;
+  padding: 25px 12px;
+  letter-spacing: 1px;
+  font-weight: 100;
+  text-align: justify;
+}
+
+.skills h5, .projects, .card-title{
+  font-family: "Exo 2", sans-serif;
+  font-weight: 300;
+}
+
+.skills p, .card-text {
+  font-weight: 100;
+}
+
+.fin h5,
+.fin p {
+  text-align: right;
+}
+
+.fin {
+  border-right: 1px solid #5d737e;
+}
+
+.fin span,
+.tech span {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .fin h5,
+  .fin p,
+  #skills {
+    text-align: left;
+  }
+  .fin {
+    border: none;
+  }
+  .fin span,
+  .tech span {
+    display: inline;
+  }
+}
+
+.p-cards {
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.card {
+    margin: 15px 0;
+}
+
+.card-bg {
+    padding: 5px;
+    border-radius: 2%;
+}
