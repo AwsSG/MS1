@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap");
 
-html {
-    height: 100%;
-}
+/* html {
+  height: 100vw;
+} */
 
 /* -------------------------------------------------------------------- background image -----------*/
 
@@ -35,10 +35,10 @@ body {
 body {
   font-family: "Roboto", sans-serif;
   color: #fcfffd;
-  min-height: 100%;
-/* to make footer sticky to bottom/ source: (https://www.youtube.com/watch?v=yc2olxLgKLk) ------- created a little "jump" in the keywords animation */
+  /* to make footer sticky to bottom/ source: (https://www.youtube.com/watch?v=yc2olxLgKLk) ------- created a little "jump" in the keywords animation */
+  /*   min-height: 100vw;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; */
 }
 
 /* -------------------------------------------------------------------- Header  ------------------*/
@@ -92,7 +92,7 @@ body {
 }
 
 .title-keywords {
-        font-size: 1.3rem;
+  font-size: 1.3rem;
 }
 
 /* Souce of the below animation code: (https://stackoverflow.com/questions/29846224/css-animation-with-delay-and-opacity) */
@@ -148,9 +148,9 @@ body {
 
 /* -------------------------------------------------------------------- footer  ------------------*/
 
-footer {
- margin-top: auto;
-}
+/* footer {
+  margin-top: auto;
+} */
 
 .jumbotron {
   background-color: rgba(93, 115, 126, 0.1);
@@ -237,12 +237,18 @@ footer {
   text-align: justify;
 }
 
-.skills h5, .projects, .card-title{
+.skills h5,
+.projects,
+.card-title,
+.timeline-item h4,
+.history-heading {
   font-family: "Exo 2", sans-serif;
   font-weight: 300;
 }
 
-.skills p, .card-text {
+.skills p,
+.card-text,
+.short-intro {
   font-weight: 100;
 }
 
@@ -277,30 +283,92 @@ footer {
 }
 
 .projects {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 .p-cards {
-    margin-left: 8px;
-    margin-right: 8px;
+  margin-left: 8px;
+  margin-right: 8px;
 }
 
 .card {
-    margin: 15px 0;
-    padding: 0 5px;
+  margin: 15px 0;
+  padding: 0 5px;
 }
 
 .card-bg {
-    padding: 10px;
-    border-radius: 2%;
-    background-color: rgba(231, 29, 54, 0.1);
-    margin-bottom: 8px;
+  padding: 10px;
+  border-radius: 2%;
+  background-color: rgba(231, 29, 54, 0.1);
+  margin-bottom: 8px;
 }
 
+/* glow effect/ includes:
+ the keywords in heading section 
+ the Financial and Technology sub-headings
+ skills sub-heading
+work history sub-heading
+ */
 .card-title,
 .fin h5,
 .tech h5,
-.skills h5, 
-.title-keywords {
-    text-shadow: 0 0 10px #fff;
+.skills h5,
+.title-keywords,
+.history-heading {
+  text-shadow: 0 0 10px #fff;
+}
+
+/* -------------------------------------------------------------------- work history body section  ------------------*/
+
+ .timeline-item {
+    padding: 4em 2em 0em 2em;
+    position: relative;
+    border-left: 1px solid #5d737e;
+}
+
+.timeline-item p {
+    padding: 0;
+    margin: 0;
+    font-weight: 100;
+}
+
+.timeline-item h4 {
+    font-weight: 
+}
+
+.timeline-item:before {
+    content: attr(data-dates);
+    position: absolute;
+    left: 2.5em;
+    top: 3em;
+    display: block;
+    font-weight: 500;
+    font-size: 0.8em;
+    padding: 0;
+    margin: 0;
+}
+
+.timeline-item:after {
+    width: 12px;
+    height: 12px;
+    display: block;
+    top: 2.4em;
+    position: absolute;
+    left: -6px;
+    border-radius: 12px;
+    content: '';
+    background: #5d737e;
+}
+
+.short-intro {
+    margin-top: 2em;
+    margin-bottom: 3em;
+}
+
+.history-heading {
+    margin-bottom: 20px;
+}
+
+.history-items {
+    margin-bottom: 3em;
 }
