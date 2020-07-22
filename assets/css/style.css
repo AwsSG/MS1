@@ -1,9 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap");
 
-/* html {
-  height: 100vw;
-} */
-
 /* -------------------------------------------------------------------- background image -----------*/
 
 /* source of the background img (https://www.toptal.com/designers/subtlepatterns/) */
@@ -16,15 +12,6 @@ body {
 .color1 {
   color: #fcfffd;
 }
-.color2 {
-  color: #489fb5;
-}
-.color3 {
-  color: #ffa62b;
-}
-.color4 {
-  color: #64b6ac;
-}
 .color5 {
   color: #5d737e;
 }
@@ -35,10 +22,6 @@ body {
 body {
   font-family: "Roboto", sans-serif;
   color: #fcfffd;
-  /* to make footer sticky to bottom/ source: (https://www.youtube.com/watch?v=yc2olxLgKLk) ------- created a little "jump" in the keywords animation */
-  /*   min-height: 100vw;
-  display: flex;
-  flex-direction: column; */
 }
 
 /* -------------------------------------------------------------------- Header  ------------------*/
@@ -147,10 +130,11 @@ body {
 }
 
 /* -------------------------------------------------------------------- footer  ------------------*/
-
-/* footer {
-  margin-top: auto;
-} */
+/* trying to create sticky (to bottom) footer position - did not work as intended */
+footer {
+    position: relative;
+    bottom: 0;
+}
 
 .jumbotron {
   background-color: rgba(93, 115, 126, 0.1);
@@ -161,7 +145,8 @@ body {
 .social-links li a i,
 .contact-link,
 .dl-icon,
-.card-link {
+.card-link,
+.submit-btn {
   transition: all 0.35s ease-in-out;
   -moz-transition: all 0.35s ease-in-out;
   -webkit-transition: all 0.35s ease-in-out;
@@ -241,7 +226,9 @@ body {
 .projects,
 .card-title,
 .timeline-item h4,
-.history-heading {
+.history-heading,
+.contact-heading,
+.contact-subheading {
   font-family: "Exo 2", sans-serif;
   font-weight: 300;
 }
@@ -266,8 +253,8 @@ body {
   display: none;
 }
 
-/* made max width 760 instead of 768 so that the effect is activated only below the tablet size */
-@media (max-width: 760px) {
+/* made max width 767 instead of 768 so that the effect is activated only below the tablet size */
+@media (max-width: 767px) {
   .fin h5,
   .fin p,
   #skills {
@@ -332,10 +319,6 @@ work history sub-heading
     font-weight: 100;
 }
 
-.timeline-item h4 {
-    font-weight: 
-}
-
 .timeline-item:before {
     content: attr(data-dates);
     position: absolute;
@@ -372,3 +355,32 @@ work history sub-heading
 .history-items {
     margin-bottom: 3em;
 }
+
+/* -----------------------------------------------------contact form--------------- */
+
+.contact-heading {
+    margin-top: 1.5em;
+}
+
+.contact-subheading {
+    margin-bottom: 2em;
+}
+
+.contact-form {
+    margin: 40px 0;
+}
+
+.form-control {
+    margin-bottom: 20px;
+}
+
+.submit-btn {
+    background-color: #5d737e;
+    color: #fcfffd;
+}
+
+.submit-btn:hover {
+    color: #fcfffd;
+    background-color: #e71d36;
+}
+
