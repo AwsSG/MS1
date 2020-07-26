@@ -1,6 +1,6 @@
-#Aws online WEB CV
+# Aws online WEB CV
 
-MS1 GitHub project page [here](http:)
+MS1 GitHub project page [here](https://awssg.github.io/MS1/index.html)
 
 This is the main website used to show my CV for the targeted audience (in user stories). It was designed to be simple and clear on wide range of devices, making it easy to follow and navigate.
 
@@ -28,15 +28,16 @@ This is the main website used to show my CV for the targeted audience (in user s
 
 *   ### Wireframes
 
-    -   Home (Aws) Page Wireframe - [View](https://github.com/)
+    -   Home (Aws) Page Wireframe - [View](wireframe/index.png)
 
-    -   Work History (Aws Work History) page Wireframe - [View](https://github.com/)
+    -   Work History (Aws Work History) page Wireframe - [View](wireframe/workhistory.png)
 
-    -   Contact (Contact Aws) Page Wireframe - [View](https://github.com/)
+    -   Contact (Contact Aws) Page Wireframe - [View](wireframe/contact.png)
 
 ## Features
 
 -   Responsive on all device sizes.
+-   Leyout of the skills in the index page change from meduim screen sizes and below.
 
 ## Technologies Used
 
@@ -47,7 +48,7 @@ This is the main website used to show my CV for the targeted audience (in user s
 
 ### Frameworks, Libraries & Programs Used
 
-1. [Bootstrap 4.4.1:](https://getbootstrap.com/docs/4.5/getting-started/introduction/)
+1. [Bootstrap 4.5:](https://getbootstrap.com/docs/4.5/getting-started/introduction/)
     - Latest Bootstrap was used to assist with the responsiveness and styling of the website.
 1. [Google Fonts:](https://fonts.google.com/)
     - Google fonts were used to import the Roboto and Exo 2 fonts into the style.css file which is used on all pages throughout the project.
@@ -58,14 +59,14 @@ This is the main website used to show my CV for the targeted audience (in user s
 1. [GitHub:](https://github.com/)
     - GitHub is used to store the projects code after being pushed from Git.
 1. [Balsamiq:](https://balsamiq.com/)
-    - Balsamiq was used to create the [wireframes](https://github.com/) during the design process.
+    - Balsamiq was used to create the wireframes during the design process.
 
 ## Testing
 
 The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
 
--   W3C Markup Validator
--   W3C CSS Validator
+-   W3C Markup Validator: No errors were found.
+-   W3C CSS Validator: No errors were found.
 
 ### Testing User Stories from User Experience (UX) Section
 
@@ -94,83 +95,42 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 ### Further Testing
 
--   The Website was tested on Google Chrome, Internet Explorer, and Microsoft Edge browsers.
--   The website was viewed on a variety of devices such as Desktop, Laptop, Big LG screen, iPhone 8 & iPhone5/SE.
+-   The Website was tested on browsers (Google Chrome, Internet Explorer, Microsoft Edge browsers) and it worked properly.
+-   The website was viewed on a variety of devices (Desktop, Laptop, Big LG screen, iPhone 8 & iPhone5/SE) and the responsiveness was woring properly.
 -   Testing was done to ensure that all pages were linking correctly. As well as the download and social links.
--   Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
+-   Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues. non were found.
 
 ### Known Bugs
 
 -   On some screen sizes, the keywords fade in animation shows a little glitch that makes the text move slightly upwards after the animation ends.
 -   The rounded edges of the cards and the footer shows a bit of distorsion on not standard screen sizes.
+-   On some very small screen sizes (Galaxy Fold), the tags under the main name header wraps to a second line. Which is not intended.
+-   On some not standard screen sizes, some items in the personal info card overflows outside its box to the right. Which is not intended.
 
 ## Deployment
 
 ### GitHub Pages
 
-The project was deployed to GitHub Pages using the following steps...
+The project was deployed to GitHub Pages using the steps in the CI video (GitHub Pages) as follows...
 
-1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
-2. At the top of the Repository (not top of page), locate the "Settings" Button on the menu.
-    - Alternatively Click [Here](https://raw.githubusercontent.com/) for a GIF demonstrating the process starting from Step 2.
-3. Scroll down the Settings page until you locate the "GitHub Pages" Section.
-4. Under "Source", click the dropdown called "None" and select "Master Branch".
-5. The page will automatically refresh.
-6. Scroll back down through the page to locate the now published site [link](https://github.com) in the "GitHub Pages" section.
-
-### Forking the GitHub Repository
-
-By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps...
-
-1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
-2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
-3. You should now have a copy of the original repository in your GitHub account.
-
-### Making a Local Clone
-
-1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
-2. Under the repository name, click "Clone or download".
-3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
-4. Open Git Bash
-5. Change the current working directory to the location where you want the cloned directory to be made.
-6. Type `git clone`, and then paste the URL you copied in Step 3.
-
-```
-$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
-```
-
-7. Press Enter. Your local clone will be created.
-
-```
-$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
-> Cloning into `CI-Clone`...
-> remote: Counting objects: 10, done.
-> remote: Compressing objects: 100% (8/8), done.
-> remove: Total 10 (delta 1), reused 10 (delta 1)
-> Unpacking objects: 100% (10/10), done.
-```
-
-Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop) to retrieve pictures for some of the buttons and more detailed explanations of the above process.
+1. Log in to GitHub and locate the [GitHub MS1 Repository](https://github.com/AwsSG/MS1)
+2. Go to the "Settings" tab and scroll down to GitHub Pages.
+3. Under the "source" Select the "master branch" and click "save".
+4. Scrol down on the next page to GitHub Pages and find the live link to the project.
 
 ## Credits
 
 ### Code
 
--   The full-screen hero image code came from this [StackOverflow post](https://stackoverflow.com)
+-   The dark background image file came from [subtlepatterns](https://www.toptal.com/designers/subtlepatterns/)
 
--   [Bootstrap4](https://getbootstrap.com/docs/4.4/getting-started/introduction/): Bootstrap Library used throughout the project mainly to make site responsive using the Bootstrap Grid System.
+-   [Bootstrap4](https://getbootstrap.com/docs/4.5/getting-started/introduction/): Bootstrap Library used throughout the project mainly to make site responsive using the Bootstrap Grid System and to use some dafualt styling.
 
--   [MDN Web Docs](https://developer.mozilla.org/) : For Pattern Validation code. Code was modified to better fit my needs and to match an Irish phone number layout to ensure correct validation. Tutorial Found [Here](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/tel#Pattern_validation)
+-   The fade in animation on the tags under the main name header came from [Stackoverflow post](https://stackoverflow.com/questions/29846224/css-animation-with-delay-and-opacity)
 
 ### Content
 
 -   All content was written by the developer.
-
--   Psychological properties of colours text in the README.md was found [here](http://www.colour-affects.co.uk/psychological-properties-of-colours)
-
-### Media
-
--   All Images were created by the developer.
 
 ### Acknowledgements
 
