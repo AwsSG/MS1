@@ -106,6 +106,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 -   The rounded edges of the cards and the footer shows a bit of distorsion on not standard screen sizes.
 -   On some very small screen sizes (Galaxy Fold), the tags under the main name header wraps to a second line. Which is not intended.
 -   On some not standard screen sizes, some items in the personal info card overflows outside its box to the right. Which is not intended.
+-   On very big screen sizes, the footer will be stuck right below the content instead of the bottom of the screen.
 
 ## Deployment
 

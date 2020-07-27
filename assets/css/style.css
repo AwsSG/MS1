@@ -130,11 +130,6 @@ body {
 }
 
 /* -------------------------------------------------------------------- footer  ------------------*/
-/* trying to create sticky (to bottom) footer position - did not work as intended */
-footer {
-    position: relative;
-    bottom: 0;
-}
 
 .jumbotron {
   background-color: rgba(93, 115, 126, 0.1);
@@ -164,9 +159,21 @@ footer {
   margin-left: 5px;
 }
 
+.social-links li a i {
+    font-size: 1.5rem;
+}
+
+@media (max-width: 767px) {
+  .footer-heading,
+  .social-links {
+    text-align: center;
+  }
+}
+
 .footer-heading {
   padding-bottom: 8px;
   font-size: 1.25rem;
+  margin-top: 8px;
   margin-bottom: 4px;
   font-weight: 200;
 }
